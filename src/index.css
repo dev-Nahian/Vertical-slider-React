@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("./assets/fonts/BDOGrotesk-VF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-black {
+  font-family: "BDOGrotesk", sans-serif;
+  font-weight: 900;
+}
+
+.text-extrabold {
+  font-family: "BDOGrotesk", sans-serif;
+  font-weight: 800;
+}
+
+.text-bold {
+  font-family: "BDOGrotesk", sans-serif;
+  font-weight: 700;
+}
+
+.text-regular {
+  font-family: "BDOGrotesk", sans-serif;
+  font-weight: 400;
+}
+.text-medium {
+  font-family: "BDOGrotesk", sans-serif;
+  font-weight: 500;
+}
+.text-semibold {
+  font-family: "BDOGrotesk", sans-serif;
+  font-weight: 600;
+}
+
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(calc(-250px * 0)); }
+  100% { transform: translateX(0); }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(140px * 14);
+}
+
+.backBg{
+  background: url(./assets/images/backGroundOne.png) no-repeat ;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* padding: 57px 0 0 100px; */
+  border-radius: 30px;
+  /* height: 516px; */
+  overflow: hidden;
+  transition: all linear 0.5s;
+  cursor: pointer;
+}
+.backBg:hover{
+  scale: 103%;
+}
+
+.bgTwo{
+  background: url(./assets/images/backGroundTwo.png) no-repeat ;
+  background-size: cover;
+  background-position: center;
+  /* width: 49%; */
+  /* padding: 63px 53px 0 104px; */
+  border-radius: 30px;
+  /* height: 516px; */
+  overflow: hidden;
+  transition: all linear 0.5s;
+  cursor: pointer;
+}
+.bgTwo:hover{
+  scale: 103%;
+}
+
+.bgThree{
+  background: url(./assets/images/BannerBg3.png) no-repeat ;
+  background-size: cover;
+  background-position: center;
+  /* width: 49%; */
+  /* padding: 63px 53px 0 104px; */
+  border-radius: 30px;
+  /* height: 516px; */
+  overflow: hidden;
+  transition: all linear 0.5s;
+  cursor: pointer;
+}
+.bgThree:hover{
+  scale: 103%;
+}
+
+
+
+.bg-shapeBegun{
+  background: url(./assets/images/shapeBegun.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
